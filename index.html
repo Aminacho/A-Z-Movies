@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aminacho" />
+    <meta name="copyright" content="Aminacho" />
+    <meta
+      name="description"
+      content="Movie Explorer is a responsive web application built with HTML, CSS and JavaScript to browse and search movies."
+    />
+    <meta
+      name="keywords"
+      content="movies, portfolio, javascript, html, css, frontend, web development, aminacho"
+    />
+
+    <meta property="og:title" content="A-Z Movies | Aminacho" />
+    <meta
+      property="og:description"
+      content="A movie browsing web application built with HTML, CSS and JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css" />
+    >
+    <script src="script.js" defer></script>
+
+    <title>📽️ A-Z Movies</title>
+  </head>
+  <body>
+    <div class="navBar" aria-label="Main Navigation">
+      <h1 class="logo"><a href="#home">📽️ A-Z Movies</a></h1>
+      <div class="menuBurger" aria-label="menu responsive">
+        <button class="openMenu" aria-label="Open menu">☰</button>
+        <button class="closeMenu hide close" aria-label="Close menu">X</button>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#trend">Trend</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+        <input
+          type="text"
+          class="searchInput"
+          data-search
+          placeholder="🔎 Search movies..."
+          aria-label="Search movies"
+          spellcheck="false"
+        />
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-content" id="trend">
+        <h1>Experience the <span>Magic </span> of Cinema.</h1>
+
+        <p>
+          Explore thousands of movies, watch trailers, and stay updated with the
+          latest releases. Dive into a world of unforgettable stories.
+        </p>
+
+        <div class="hero-buttons">
+          <button>Watch Now</button>
+          <button>Watch Trailer</button>
+        </div>
+      </div>
+      <div class="carouselWrap">
+        <div class="carousel" alt="Movie poster">
+          <img src="/public//avatar.avif" alt="avatar movie poster" />
+          <img src="/public/poster1.jpg" alt="Dune movie poster" />
+          <img src="/public/poster2.jpg" alt="Shaddow Ronin movie poster" />
+          <img src="/public/poster3.jpg" alt="Elden Flame movie poster" />
+          <img src="/public/poster4.jpg" alt="Dragon Fall movie poster" />
+        </div>
+      </div>
+    </div>
+    <!-- Main Section -->
+    <div class="movies" id="movies">
+      <div class="titleMovies">
+        <h1>movies</h1>
+        <p>Best movies of all times...</p>
+      </div>
+      <div class="notFound">Not Found 🧐</div>
+      <div class="cards"></div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="legacy">
+          <h2>Legacy</h2>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#"> Terms & Services </a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+        <div class="about">
+          <h2>About us</h2>
+          <p><a href="#">Projects</a></p>
+          <p><a href="#"> About </a></p>
+          <p><a href="#">Portfolio</a></p>
+        </div>
+        <div class="Social">
+          <h2>Social media</h2>
+          <p>
+            <a href="https://www.linkedin.com/in/amina-chorfi-dev/">
+              Linked In</a
+            >
+          </p>
+
+          <p><a href="#"> Facebook</a></p>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">X</a></p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Aminacho. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
